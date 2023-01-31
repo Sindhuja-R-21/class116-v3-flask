@@ -1,4 +1,6 @@
+from flask import Flask, render_template
 
+app=Flask(__name__)
 
 @app.route("/")
 def first_flask():
@@ -11,6 +13,8 @@ def second_flask():
     return "Python is fun !"
 
 app.run(debug=True)
+
+
 
 
 
